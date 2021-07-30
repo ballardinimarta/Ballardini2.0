@@ -15,13 +15,13 @@ function App() {
     let work = document.querySelector('#work-section').getBoundingClientRect();
     let contact = document.querySelector('#contact-section').getBoundingClientRect();
 
-    if (aboutme.top < 0 && portfolio.top > 0) {
+    if (aboutme.top <= 0 && portfolio.top > 0) {
           setbgcolor("#cdf0c5");
-        } else if (portfolio.top < 0 && work.top > 0){
+        } else if (portfolio.top <= 0 && work.top > 0){
           setbgcolor("#5fcc8d");
-        } else if (work.top < 0 && contact.top > 0) {
+        } else if (work.top <= 0 && contact.top > 0) {
           setbgcolor("#e0aade");
-        } else if (contact.top < 0) {
+        } else if (contact.top <= 0) {
           setbgcolor("#63B4D1");
         } else {
           setbgcolor("#bebdee");
@@ -35,11 +35,11 @@ function App() {
    < >
         {toggle && 
             <div id="sidebar" className="sidebar" style = {{backgroundColor: bgcolor}}>
-            <a className="link" href="#header">Start.</a>
-            <a className="link" href="#who-am-i">Who am i ?</a>
-            <a className="link" href="#portfolio">Portfolio.</a>
-            <a className="link" href="#CV">CV.</a>
-            <a className="link" href="#contact">Contact.</a>
+            <a onClick={scrollChangeColor} className="link" href="#header">Start.</a>
+            <a onClick={scrollChangeColor} className="link" href="#who-am-i">Who am i ?</a>
+            <a onClick={scrollChangeColor} className="link" href="#portfolio">Portfolio.</a>
+            <a onClick={scrollChangeColor} className="link" href="#CV">CV.</a>
+            <a onClick={scrollChangeColor} className="link" href="#contact">Contact.</a>
           </div>
         }
       

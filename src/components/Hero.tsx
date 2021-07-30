@@ -2,10 +2,11 @@
 import React from 'react'
 
 function Hero() {
+    let name = "< Märta Ballardini />"
     return (
         <header id="header">
           
-            <h1 id="nameTitle"> Märta Ballardini </h1>
+            <h1 id="nameTitle"> {name} </h1>
             <ul id="headingNav">
                 <li><a className="link" href="#who-am-i">Who am i ?</a></li>
                 <li><a className="link" href="#portfolio">Portfolio.</a></li>

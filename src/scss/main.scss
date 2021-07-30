@@ -66,10 +66,11 @@ html {
             justify-content: center;
             text-align: center;
             #nameTitle {
+                font-family: inherit;
                 font-size: 400%;
                 font-weight: 500;
                 @include phone {
-                    font-size: 180%;
+                    font-size: 150%;
                 }
             }
             #headingNav{
@@ -146,7 +147,7 @@ html {
                     }
                     @include phone {
                         font-size: 12px;
-                        width: 100%;
+                        width: 90%;
                         padding: 0;
                     }
                     p {
@@ -227,12 +228,29 @@ html {
                     width: 40%;
                     padding: 20px;
                     @include tablet {
-                        width: 100%;                
+                        width: 100%;   
+                        padding: 20px 0px;
+             
+                    }
+                    @include phone {
+                        width: 100%;
+                        padding: 20px 0px;
                     }
                     .slick-slider {
                         width: 100%;
+                        @include phone {
+                            width: 90%;
+                        }
+                        // .slick-dots {
+                        //     @include phone {
+                        //         width: 100%;
+                        //     }
+                        // }
                         img {
                             width: 100%;
+                            @include phone {
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -242,6 +260,12 @@ html {
                     .projekttitle {
                         font-size: 20px;
                         font-weight: 500;
+                    }
+                    .projektdescription {
+
+                        @include phone {
+                            width: 90%;
+                        }
                     }
 
                 }
@@ -337,7 +361,7 @@ html {
                         font-size: 16px;
                     }
                     @include phone {
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                 }                
                 a {
