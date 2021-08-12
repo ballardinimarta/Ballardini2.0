@@ -7,7 +7,7 @@ import Kontakt from './components/Kontakt';
 import './scss/main.scss'
 function App() {
   const [toggle, setToggle] = useState(false);
-  const [bgcolor, setbgcolor] = useState('#bebdee')
+  const [bgcolor, setbgcolor] = useState('#4787ff')
   
   function scrollChangeColor() {
     let aboutme = document.querySelector('#about-me-section').getBoundingClientRect();
@@ -16,7 +16,7 @@ function App() {
     let contact = document.querySelector('#contact-section').getBoundingClientRect();
 
     if (aboutme.top <= 0 && portfolio.top > 0) {
-          setbgcolor("#cdf0c5");
+          setbgcolor("#ff5160");
         } else if (portfolio.top <= 0 && work.top > 0){
           setbgcolor("#5fcc8d");
         } else if (work.top <= 0 && contact.top > 0) {
@@ -24,7 +24,7 @@ function App() {
         } else if (contact.top <= 0) {
           setbgcolor("#63B4D1");
         } else {
-          setbgcolor("#bebdee");
+          setbgcolor("#4787ff");
         }
   }
 
