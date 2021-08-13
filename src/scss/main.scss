@@ -326,8 +326,18 @@ html {
                             }
                         }
                         p {
+                            padding: 10px 0px;
                             @include phone {
                                 font-size: 12px;
+                            }
+                            a {
+                                color: inherit;
+                            }
+                        }
+                        .time {
+                            font-size: 90%;
+                            @include phone {
+                                font-size: 10px;
                             }
                         }
                         

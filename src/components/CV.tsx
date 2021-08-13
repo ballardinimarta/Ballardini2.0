@@ -35,6 +35,7 @@ function CV() {
                         <em className="workplace school-company">Medieinstitutet</em>
                         <p className="work-description school-description">Studying the program Front End Developer at Medieinstitutet.</p>
                         <p className="time">From September 2020 to June 2022</p>
+                        <em><p className="time"><a href="https://medieinstitutet.se/utbildningar/front-end-developer/">More information on the classes.</a></p></em>
                     </div>
                     <div className="school">
                         <strong className="work-title school-title">Online Courses</strong>
@@ -57,7 +58,7 @@ function CV() {
                         </div>
                         <div className="skill">
                             <strong className="work-title skill-title">Knowledge</strong>
-                            <p className="work-description skill-description">I have knowledge in programming languages as <em>HTML, CSS, JavaScript</em> and <em>Python.</em> I also know <em>jQuery, NodeJS, Git</em> and <em>Agile workflow (Scrum).</em></p>
+                            <p className="work-description skill-description">I have knowledge in programming languages as <em>HTML, CSS, JavaScript</em> and <em>Python.</em> I also know <em>jQuery, NodeJS, Git, React.js, Angular</em> and <em>Agile workflow (Scrum).</em></p>
                         </div>
                         <div className="skill">
                             <strong className="work-title skill-title">languages</strong>

@@ -34,7 +34,7 @@ function Portfolio() {
         { 
             images: [besattstart, besattbutiker,  besattpren, besattmeny],
             title: 'Besatt Magazine',
-            description: 'A website for besatt magazine. Besatt is a analog paper magazine made by my friends. They needed a website to spread information about where you can buy the magazine and how you can order it from them. Made with react',
+            description: 'A website for besatt magazine. Besatt is a analog paper magazine made by my friends. They needed a website to spread information about where you can buy the magazine and how you can order it from them. Made with React.js.',
             demolink: 'https://besatt.org/',
             gitlink: 'https://github.com/ballardinimarta/BESATT3.0'
         },
