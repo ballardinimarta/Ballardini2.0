@@ -16,7 +16,7 @@ function OmMig() {
                     On my free time i like to hang out with my friends and my boyfriend Simon. I also really like to play with makeup to entertain my creative side.
                 </p>
                 <br />
-                <p> Please have a look at my cv <a href={cv} target="_blank">HERE!</a> </p>
+                <p> Please have a look at my cv <a href={cv} target="_blank" rel="noreferrer">HERE!</a> </p>
                 
                 
             </div>  
