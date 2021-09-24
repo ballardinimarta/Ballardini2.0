@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Hero from './components/Hero';
 import OmMig from './components/OmMig';
 import Portfolio from './components/Portfolio';
-import CV from './components/CV';
 import Kontakt from './components/Kontakt';
 import './scss/main.scss'
+import Skills from './components/Skills';
 function App() {
   const [toggle, setToggle] = useState(false);
   const [bgcolor, setbgcolor] = useState('#4787ff')
@@ -12,7 +12,7 @@ function App() {
   function scrollChangeColor() {
     let aboutme = document.querySelector('#about-me-section').getBoundingClientRect();
     let portfolio = document.querySelector('#portfolio-section').getBoundingClientRect();
-    let work = document.querySelector('#work-section').getBoundingClientRect();
+    let work = document.querySelector('#skills-section').getBoundingClientRect();
     let contact = document.querySelector('#contact-section').getBoundingClientRect();
 
     if (aboutme.top <= 0 && portfolio.top > 0) {
@@ -35,22 +35,22 @@ function App() {
    < >
         {toggle && 
             <div id="sidebar" className="sidebar" style = {{backgroundColor: bgcolor}}>
-            <a onClick={scrollChangeColor} className="link" href="#header">Start.</a>
+            <a onClick={scrollChangeColor} className="link" href="#header">Start</a>
             <a onClick={scrollChangeColor} className="link" href="#who-am-i">Who am i ?</a>
-            <a onClick={scrollChangeColor} className="link" href="#portfolio">Portfolio.</a>
-            <a onClick={scrollChangeColor} className="link" href="#CV">CV.</a>
-            <a onClick={scrollChangeColor} className="link" href="#contact">Contact.</a>
+            <a onClick={scrollChangeColor} className="link" href="#portfolio">Portfolio</a>
+            <a onClick={scrollChangeColor} className="link" href="#skills">Skills</a>
+            <a onClick={scrollChangeColor} className="link" href="#contact">Contact</a>
           </div>
         }
       
         <div id="navDiv">
-          {toggle && <button id="navButton" onClick={() => {setToggle(!toggle)}}><i id="times" className="fas fa-times"></i></button>}
-          {!toggle && <button id="navButton" onClick={() => {setToggle(!toggle)}}> <i id="bars" className="fas fa-bars"></i></button>}
+          {toggle && <button id="navButton"  onClick={() => {setToggle(!toggle)}}><i id="times" className="fas fa-times"></i></button>}
+          {!toggle && <button id="navButton" style = {{backgroundColor: bgcolor}} onClick={() => {setToggle(!toggle)}}> <i id="bars" className="fas fa-bars"></i></button>}
         </div>
       <Hero></Hero>
       <OmMig></OmMig>
       <Portfolio></Portfolio>
-      <CV></CV>
+      <Skills></Skills>
       <Kontakt></Kontakt>
    </>
   );
