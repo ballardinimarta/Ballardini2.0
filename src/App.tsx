@@ -7,7 +7,7 @@ import './scss/main.scss'
 import Skills from './components/Skills';
 function App() {
   const [toggle, setToggle] = useState(false);
-  const [bgcolor, setbgcolor] = useState('#4787ff')
+  const [bgcolor, setbgcolor] = useState('#000000')
   
   function scrollChangeColor() {
     let aboutme = document.querySelector('#about-me-section').getBoundingClientRect();
@@ -16,15 +16,15 @@ function App() {
     let contact = document.querySelector('#contact-section').getBoundingClientRect();
 
     if (aboutme.top <= 0 && portfolio.top > 0) {
-          setbgcolor("#ff5160");
+          setbgcolor("#4787ff");
         } else if (portfolio.top <= 0 && work.top > 0){
           setbgcolor("#5fcc8d");
         } else if (work.top <= 0 && contact.top > 0) {
           setbgcolor("#e0aade");
         } else if (contact.top <= 0) {
-          setbgcolor("#63B4D1");
+          setbgcolor("#ffa723");
         } else {
-          setbgcolor("#4787ff");
+          setbgcolor("#000000");
         }
   }
 
@@ -32,7 +32,7 @@ function App() {
 
 
   return (
-   < >
+   <>
         {toggle && 
             <div id="sidebar" className="sidebar" style = {{backgroundColor: bgcolor}}>
             <a onClick={scrollChangeColor} className="link" href="#header">Start</a>
@@ -47,7 +47,7 @@ function App() {
           {toggle && <button id="navButton"  onClick={() => {setToggle(!toggle)}}><i id="times" className="fas fa-times"></i></button>}
           {!toggle && <button id="navButton" style = {{backgroundColor: bgcolor}} onClick={() => {setToggle(!toggle)}}> <i id="bars" className="fas fa-bars"></i></button>}
         </div>
-      <Hero></Hero>
+      <Hero ></Hero>
       <OmMig></OmMig>
       <Portfolio></Portfolio>
       <Skills></Skills>
