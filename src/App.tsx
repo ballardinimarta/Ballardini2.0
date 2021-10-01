@@ -8,7 +8,6 @@ import Skills from './components/Skills';
 function App() {
   const [toggle, setToggle] = useState(false);
   const [bgcolor, setbgcolor] = useState('#000000')
-  
   function scrollChangeColor() {
     let aboutme = document.querySelector('#about-me-section').getBoundingClientRect();
     let portfolio = document.querySelector('#portfolio-section').getBoundingClientRect();

@@ -4,7 +4,7 @@ import cv from '../assets/CVMartaEng.pdf'
 function OmMig() {
     return (
         <section  id="about-me-section" className="about-me" >
-        <h2 id="who-am-i" className="title-main">Who am i?</h2>
+        <h2 id="who-am-i" className="title-main">Who am I?</h2>
         <div id="aboutme-wrapper">
             <div id="text-box">
                 <p>
