@@ -79,7 +79,6 @@ function Skills() {
     }
     const [navItem, setNavItem] = useState("languages")
     const [skillsInfo, setSkillsInfo] = useState<any>()
-    let star = <i className="fas fa-star"></i>
     function skillItemHtml (nav: skill[], title: string) {
         setSkillsInfo(
             <>
@@ -118,6 +117,7 @@ function Skills() {
     useEffect(() => {
         toggleinfo();
         
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [navItem])
     
     return (
